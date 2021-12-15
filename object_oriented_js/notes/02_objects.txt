@@ -1,0 +1,62 @@
+object in js is collection of key value pairs.
+
+
+1. creating objects
+2. factories and constructors 
+3. primitives and reference types 
+4. working with properties 
+5. private properties 
+6. getters and setters 
+
+
+
+1. creating objects:
+
+
+using {} -> object leteral syntax
+
+const circle = {
+    radius: 1,
+    location: {
+        x: 1,
+        y: 1
+    },
+    draw: function() {
+        console.log('draw')
+    }
+}
+
+radius and location are properties - used to hold some values.
+draw is method - define some logic.
+
+access by using dot. -> circle.draw()
+
+
+object literal syntax is not a good method to create an object
+if the object has at least one method (or behaviour).
+
+
+2. facrtories and constructors
+
+factory function has return
+constructor function has this keyword and needs 'new' to create object.
+'new' refers to window in browser and global in node
+
+2.1 Constructor property
+
+Every object in js has constructor property that 
+references to the function that was used to create that object.
+JS uses this constructor function internally. 
+
+In js, functions are object.
+
+
+
+3. Primitives and referenc types
+
+primitives = number, string, boolean, symbol, undefined, null
+reference types = object, function, array
+
+primitives are copied by their value,
+Objects are copied by their reference.
+

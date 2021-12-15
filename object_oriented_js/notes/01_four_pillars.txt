@@ -1,0 +1,39 @@
+In functional programming, as the app  grows, there will be many functions.
+There is so much interdependencies between these functions that it becomes problematic.
+
+In OOP, related variables and functions are put together in a unit called object.
+That variables are properties and functions are methods of the object.
+
+example:
+Class: Car
+properties: model, color, price
+methods: start(), stop(), move()
+
+
+** Four pillars of OOP **
+(A PIE )
+1. Abstraction
+2. Polymorphism
+3. Inheritance
+4. Encapsulation
+
+1. Encapsulation - Grouping of related variables
+        and functions that operate on them in an object.
+       
+2. Abstraction - Hiding some of the properties and methods of object 
+    from outside. Simpler interface and reduce the impact of change.
+    
+
+3. Inheritance - mechanism that allows to eliminate redundant code. 
+        For objects having similar properties and methods, define them once
+        in a generic object and inherit from it.
+
+4. Polymorphism - Many forms. Technique that allows to get rid of long
+        if-else ladders and switch cases.
+
+
+Encapsulation -  Reduce complexity and increase reusability.
+Abstraction - Reduce complexity and isolate impact of changes.
+Inheritance - Eliminate redundant code.
+Polymorphism - Refactor ugly switch/case statements.
+
