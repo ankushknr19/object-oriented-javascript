@@ -5,17 +5,24 @@ class User {
     }
     login(){
         console.log(this.email, 'just logged in')
+        return this
     }
     logout(){
         console.log(this.email, 'just logged out')
+        return this
     }
 }
 
+class Admin extends User {
+    
+    login(){ //overwrites the login method from parent class
+        console.log('admin'+this.email+'logged in succesfully. Welcome admin ' + this.name)
+    }
+}
+
+
 const userOne = new User('ank.knr@gmail.com', 'Ankush')
 const userTwo = new User('anq.qnr@gmail.com', 'Nqush')
+const admin = new Admin('snit@gmail.com', 'Sanit')
 
-userOne.login()
-userTwo.logout()
-
-console.log(userOne)
-console.log(userTwo)
+console.log(admin.login())

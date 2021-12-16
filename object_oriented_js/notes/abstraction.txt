@@ -1,0 +1,5 @@
+Abstraction hides the implementation from the user. Show only the essentials
+achieved by abstract class and interface
+The abstract class will hold common functionality for all classes that extend it.
+We cannot create an instance of Abstract Class.
+It reduces the duplication of code, adds security.

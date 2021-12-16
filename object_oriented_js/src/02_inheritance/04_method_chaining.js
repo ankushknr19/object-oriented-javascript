@@ -1,4 +1,4 @@
-// constructor class
+// constructor function
 const User = function(email, name){
     this.email = email
     this.name = name

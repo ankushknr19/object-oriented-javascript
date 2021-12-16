@@ -15,8 +15,8 @@ class User {
 
 class Admin extends User {
     deleteUser(user){
-        users = users.filter( u => {
-            return u.email != user.email
+        users = users.filter( u => {  
+            return u.email != user.email    // creates a new array filled with elements that pass a test provided by a function.
         })
     }
 }

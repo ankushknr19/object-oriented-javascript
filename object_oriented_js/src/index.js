@@ -14,10 +14,9 @@ class User {
 }
 
 class Admin extends User {
-    deleteUser(user){
-        users = users.filter( u => {
-            return u.email != user.email
-        })
+    // super.login()
+    login(){
+        console.log(`admin ${this.email} logged in successfully. Welcome admin ${this.name} !`)
     }
 }
 
@@ -26,10 +25,4 @@ const userOne = new User('ank.knr@gmail.com', 'Ankush')
 const userTwo = new User('anq.qnr@gmail.com', 'Nqush')
 const admin = new Admin('snit@gmail.com', 'Sanit')
 
-var users = [userOne, userTwo, admin]
-
-console.log(users)
-
-admin.deleteUser(userTwo)
-
-console.log(users)
+console.log(admin.login())
